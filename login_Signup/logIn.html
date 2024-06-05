@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="../favicon.ico">
+
+<!--bootstrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+<!--Estilos css-->
+<link href="LogIn&SignUp.css" rel="stylesheet" type="text/css">
+<html  lang="es">
+  
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Log In</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <center>
+        <div class="container">
+           <div> <h1>Iniciar Sesión</h1></div>
+            <div id="mailpass">
+              <form method="post" action="logIn.php" name="signin-form">
+                <h2>Nombre de usuario</h2>
+                <input type="text" name="username" id="inputText" required>
+
+                <h2>Contraseña</h2>
+                <input type="password" name="password" id="inputText" required>
+
+                <button type="submit" name="login" class="btn" id="btnLogIn" value="login">
+                    Log In
+                  </button>
+
+                <span class="boxDivider"> or </span>
+
+                <button type="button" name="" class="btn" id="btnFacebook">
+                    <i class="fab fa-facebook" style="color: inherit;"></i>
+                    Continuar con Facebook
+                  </button>
+
+                <button type="button" name="" class="btn" id="btnGoogle">
+                    <i class="fab fa-google" style="color: inherit;"></i>
+                    Continuar con Google
+                  </button>
+
+                  <button type="button" name="" class="btn" id="btnGitHub">
+                    <i class="fab fa-microsoft" style="color: inherit;"></i>
+                    Continuar con Microsoft
+                  </button>
+                
+                  <div class="marginLostPass"><a href="*"> ¿Has olvidado tu contraseña?</a></div>
+              </form>
+            </div>
+        </div>
+    </center>
+        <script src="" async defer></script>
+    </body>
+</html>

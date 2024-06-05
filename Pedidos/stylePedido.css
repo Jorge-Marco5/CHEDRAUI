@@ -1,0 +1,197 @@
+
+*{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body{
+    background: linear-gradient(to bottom right, gray, #ffd900);
+}
+
+
+
+.Titulos{
+    color: white;
+    height: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: large;
+    font-style: normal;
+    
+}
+
+/*CUADRO PARA MOSTRAR LAS UBICACIONES GUARDADAS*/
+
+.container{
+  background:rgba(0,0,0,0.20);
+  position:relative;
+  width: 400px;
+  height:580px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.title{
+    color: black;
+}
+
+.textLocation{
+    color: black;
+    margin: 10px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: large;
+    background-color: transparent;
+}
+
+.containerUbicacion{
+        background:rgba(0,0,0,0.20);
+        overflow-y: auto;
+        position:relative;
+        width: auto;
+        height:530px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+#inputText{
+    width: 300px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid #0000;
+    border-color: #c2c8d0!important;
+    padding:14px;
+}
+
+#inputText[type=text]{
+    color: black;
+    font-size: 14px;
+    border: 1px solid #ffd900;
+    border-color: #c2c8d0!important;
+}
+
+.btn{
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #ffd900;
+    background-color: #ffd900;
+  }
+
+  .containerLocations{
+    background:rgba(0,0,0,0.20);
+    margin-top: 5px;
+
+  }
+
+  .textLocation{
+    color: black;
+  }
+
+@media screen and (max-width: 580px) {
+    header{
+        height: 90px;
+        padding: 20px 20px;
+    }
+    .name{
+        margin-top: 0%;
+        width: 200px;
+        font-size: x-large;
+    }
+  }
+
+  @media screen and (min-width: 580px) {
+
+    .boxProduct{
+        width: 190px;
+        height: 210px;
+    }
+  }
+
+  .containerTabla{
+    border-radius: 10px;
+    background:rgba(0,0,0,0.20);
+    overflow-y: auto;
+    margin-left:10px ;
+    position: absolute;
+    float:left;
+    width: 800px;
+    height: 580px;
+    top: 70px; /* distancia en px desde la parte superior */
+    right:20px; /* distancia en px desde la parte derecha */
+}
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+        font-size: large;
+        text-align: center;
+    }
+
+    thead{
+        position: sticky;
+        top: 0;
+    }
+    
+    th, td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    img {
+        max-width: 100px;
+    }
+    .btnOp{
+        font-family: "Inter", sans-serif;
+        margin-top: 10px;
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
+        border: 1px solid #000000;
+    }
+
+    .editar{
+        width: 50px;
+    }
+
+    .eliminar{
+        width: 50px;
+    }
+    .btnActions{
+        font-family: "Inter", sans-serif;
+        margin-top: 10px;
+        width: auto;
+        height: 40px;
+        border-radius: 10%;
+        border: 1px solid #00000000;
+    }

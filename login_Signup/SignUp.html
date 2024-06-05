@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="../favicon.ico">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!--Estilos css-->
+<link href="LogIn&SignUp.css" rel="stylesheet" type="text/css">
+<html  lang="es">
+    <head>
+      <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sign Up</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <center>
+        <div class="containerS">
+           <div> <h1>Registrate</h1></div>
+            <div id="mailpass">
+              <form method="post" action="registration.php" name="signup-form">
+                <h2>Nombre de Usuario</h2>
+                <input type="text" name="username" id="inputText" required>
+
+                <h2>Correo Electronico</h2>
+                <input type="email" name="email" id="inputText" required>
+
+                <h2>Contraseña</h2>
+                <input type="password" name="password" id="inputText" required>
+
+                <div style="margin: 5px;">
+                  <input type="checkbox" id="ter/cond" name="ter&cond" value="ter&cond" required>
+                  <label class="terminos" for="ter/cond"> acepta los <a href="">Términos de servicio</a> y <a href="">la Política de privacidad</a>.</label>
+                </div>
+
+                <button type="submit" name="register" class="btn" id="btnLogIn" value="register">
+                    Registrate
+                  </button>
+
+                <span class="boxDivider"> or </span>
+
+                <button type="button" name="" class="btn" id="btnFacebook">
+                    <i class="fab fa-facebook" style="color: inherit;"></i>
+                    Continuar con Facebook
+                  </button>
+
+                <button type="button" name="" class="btn" id="btnGoogle">
+                    <i class="fab fa-google" style="color: inherit;"></i>
+                    Continuar con Google
+                  </button>
+
+                  <button type="button" name="" class="btn" id="btnGitHub">
+                    <i class="fab fa-twitter " style="color: inherit;"></i>
+                    Continuar con Twitter
+                  </button>
+                </form>
+            </div>
+        </div>
+    </center>
+        <script src="" async defer></script>
+    </body>
+</html>

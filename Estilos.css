@@ -1,0 +1,346 @@
+
+*{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: black;
+}
+
+
+.imgIn{
+ width: 100%;
+ height: auto;
+ max-height: 600px;
+ border-radius: 0% 0% 5px 5px;
+ display: block; /* Para asegurarse de que la imagen se muestre como un bloque */
+
+}
+
+.Titulos{
+    color: white;
+    height: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: large;
+    font-style: normal;
+    
+}
+
+/*CERRAR SESION*/
+
+
+
+.boxParent{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    margin: auto;
+    padding: auto;
+}
+
+.boxProduct{
+    width: 180px;
+    height: 200px;
+    border-color: black;
+    background: rgb(78, 78, 78);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 5px 5px;
+    
+}
+
+.imgPr{
+    width: auto;
+    height: 100px;
+    border-radius: 5px;
+    
+}
+
+.namePr{
+    color: white;
+    font-size: small;
+    margin: auto;
+}
+
+.pricePr{
+    color: #ffd900;
+    font-size: large;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 580px) {
+    header{
+        height: 90px;
+        padding: 20px 20px;
+    }
+    .name{
+        margin-top: 0%;
+        width: 200px;
+        font-size: x-large;
+    }
+  }
+
+  @media screen and (min-width: 580px) {
+
+    .boxProduct{
+        width: 190px;
+        height: 210px;
+    }
+  }
+
+    /*----------------------------------*/
+    /*PAGINA CARACTERISTICAS DE PRODUCTO*/
+    /*----------------------------------*/
+
+  #datVerProd{
+    display: flex;
+    flex-direction: column;
+  }
+
+    .verProdName{
+    margin: 20px 0px;
+    color: white;
+    height: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: x-large;
+    font-style: normal;
+    }
+
+    .verProdDescription{
+        position: relative;
+        color:white;
+        font-size: large;
+        font-family: "Mulish", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        padding: 5px 10px;
+    }
+
+    .verProdPrice{
+    margin: 0px 0px;
+    color: #ffd900;
+    font-size: xx-large;
+    }
+
+    #containerCompra{
+        background: rgba(112, 112, 112, 0.3);
+        display: flex;
+        flex-direction: row;
+        padding: 5px 10px;
+        border-radius: 5px;
+        height: 100px;
+        
+    justify-content: center;
+    align-items: center;   
+    }
+
+
+
+    #btnCompra{
+        font-size: large;
+        font-style: bold;
+        width: 150px;
+        height: 50px;
+        background-color: #ffd900;
+        border: 0ch;
+        border-radius: 50px;
+    }
+
+  .slide {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 1px;
+    width: 420px;
+    height: 280px;
+    background-color:rgb(255, 255, 255);
+}
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc( 300px + 3em);
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.slide-item img {
+    display: block;
+    height: 280px;
+    width: 450px;
+    max-width: 500px;
+}
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+}
+
+#cantidad{
+    width: 200px;
+    height: auto;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.64);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+#nameCant{
+    padding: 5px 10px;
+    color: white;
+    font-size: small;
+    margin: auto;
+
+}
+
+#cantUnit{
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btnpr{
+    background-color: rgba(112, 112, 112, 0.3);
+    color: white;
+    width: 50px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0ch;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#btncnt{
+    justify-content: center;
+    align-items: center;
+}
+
+#imgComplemento{
+    width: 120px;
+    height: 110px;
+    margin-top: 10px 15px;
+    background: rgba(255, 255, 255);
+    position: relative;
+    display: flex;
+    align-items: stretchs;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 420px) {
+.slide{
+width: auto;
+height: 280px;
+}
+
+.slide-item img{
+width: auto;
+height: 280px;
+}
+}
+
+@media screen and (max-width: 580px) {
+
+.verProdName{
+    margin: 20px 0px;
+    color: white;
+    width: 300px;
+    height: 30px;
+    font-size: x-large;
+    }
+
+    .verProdPrice{
+    margin: 10px 0px;
+    color: #ffd900;
+    font-size: xx-large;
+    }
+}
+
+@media screen and (min-width: 580px) {
+
+    #btnCompra{
+        width: 300px;
+        height: 50px;
+    }
+
+    .container1{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #datVerProd{
+        position: relative;
+        display: flex;
+        left: 10px;
+        margin-top: 1px;
+    }
+
+    .verProdName{
+        margin: 20px 0px;
+        color: white;
+        width: 300px;
+        height: 30px;
+        font-size: x-large;
+        }
+}
